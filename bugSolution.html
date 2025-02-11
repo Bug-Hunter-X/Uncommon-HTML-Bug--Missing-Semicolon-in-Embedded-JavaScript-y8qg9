@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug - Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // Semicolon added here
+    document.getElementById("myDiv").innerHTML = "This text replaces the previous content";
+  </script>
+</body>
+</html>
