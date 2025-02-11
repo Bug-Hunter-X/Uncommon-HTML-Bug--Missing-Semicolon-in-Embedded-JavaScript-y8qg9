@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // This line is missing a semicolon
+    document.getElementById("myDiv").innerHTML = "This text replaces the previous content" 
+    // Missing semicolon causes unexpected behavior in some browsers.
+  </script>
+</body>
+</html>
